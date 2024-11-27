@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Brake Pad(DP41799)",
+    "image": "1.jpg",
+    "genre": "EBC",
+    "rating": "9.2",
+    "price": "13,174"
+  },
+  {
+    "id": 2,
+    "title": "Air Filter(VF1010)",
+    "image": "2.jpg",
+    "genre": "K & N",
+    "rating": "7.1",
+    "price": "949"
+  },
+  {
+    "id": 3,
+    "title": "Oil Filter(OM 653)",
+    "image": "3.jpg",
+    "genre": "Filtron Filters",
+    "rating": "1.3",
+    "price": "4,516"
+  },
+  {
+    "id": 4,
+    "title": "Radiator(OSC 50)",
+    "image": "4.jpg",
+    "genre": "OSC Automotive products,Inc",
+    "rating": "5.7",
+    "price": "3,442"
+  },
+  {
+    "id": 5,
+    "title": "Starter Motor(GY6 50cc 60cc)",
+    "image": "5.jpg",
+    "genre": "MTATCN",
+    "rating": "9",
+    "price": "7,043"
+  },
+  {
+    "id": 6,
+    "title": "Car Battery(Tg350L 12V&32Ah",
+    "image": "6.jpg",
+    "genre": "TATA Green Batteries",
+    "rating": "7.5",
+    "price": "3,295"
+  },
+  {
+    "id": 7,
+    "title": "Spark Plug(YR7MPP33)",
+    "image": "7.jpg",
+    "genre": "BOSCH",
+    "rating": "4.1",
+    "price": "500"
+  },
+  {
+    "id": 8,
+    "title": "Fuel Pump(SP5127M)",
+    "image": "8.jpg",
+    "genre": "GPP",
+    "rating": "6.5",
+    "price": "13,799"
+  },
+  {
+    "id": 9,
+    "title": "Car Rim(17inch 5*112/5*114.3 cast Alloy)",
+    "image": "9.jpg",
+    "genre": "AD16 Wheels",
+    "rating": "7",
+    "price": "4,499"
+  },
+  {
+    "id": 10,
+    "title": "Jk Tyre(195/55 R16 tubless car tyre)",
+    "image": "10.jpg",
+    "genre": "JK Tyres",
+    "rating": "8.1",
+    "price": "5,099"
+  }
+]

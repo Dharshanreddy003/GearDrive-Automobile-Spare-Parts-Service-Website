@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles.css";
+import "../styles/styles.css";
 
-export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
+export default function CartItem({ movie, isWatchlisted, toggleWatchlist }) {
   const handleError = (e) => {
     e.target.src = "images/default.jpg";
   };
@@ -38,11 +38,11 @@ export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
             onChange={() => toggleWatchlist(movie.id)}
           ></input>
 
-          <span className="slider">
+          <div className="slider">
             <span className="slider-label">
               {isWatchlisted ? "In Cart" : "Add to Cart"}
             </span>
-          </span>
+          </div>
         </label>
       </div>
     </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles.css";
-import MovieCard from "./MovieCard";
+import "../styles/cart.css";
+import MovieCard from "../components/CartItem";
 
-export default function Watchlist({ movies, watchlist, toggleWatchlist }) {
+export default function Cart({ movies, watchlist, toggleWatchlist }) {
   return (
-    <div>
+    <div className="cart-page">
       <h1 className="title">Your Cart</h1>
       <div className="watchlist">
         {watchlist.map((id) => {
@@ -22,7 +22,7 @@ export default function Watchlist({ movies, watchlist, toggleWatchlist }) {
         })}
       </div>
       <button type="submit" className="btn2">
-        Buy
+        Place Order
       </button>
     </div>
   );

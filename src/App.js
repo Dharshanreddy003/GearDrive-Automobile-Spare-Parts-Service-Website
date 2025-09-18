@@ -1,18 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
-import "./styles.css";
+import "./styles/styles.css";
 import Footer from "./components/Footer";
-import MoviesGrid from "./components/MoviesGrid";
-import Watchlist from "./components/Watchlist";
+import MoviesGrid from "./pages/Parts";
+import Watchlist from "./pages/Cart";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Login from "./components/Login";
-import HomePage from "./components/HomePage";
-import Services from "./components/Services";
+import LoginPage from "./pages/Login";
+import HomePage from "./pages/Home";
+import Services from "./pages/Services";
+import ProfilePage from "./pages/Profile";
 
 function App() {
   const [movies, setMovies] = useState([]);
   const [watchlist, setWatchlist] = useState([]);
+  const [userState, setUserState] = useState();
 
   useEffect(() => {
     fetch("movies.json")
@@ -47,12 +47,24 @@ function App() {
               </li>
 
               <li>
-                <Link to="watchlist">Cart</Link>
+                <Link to="/cart">Cart</Link>
               </li>
 
-              <li>
-                <Link to="login">Login</Link>
-              </li>
+              {
+                userState ?
+                  <>
+                    <li>
+                      <Link to="/profile">Profile</Link>
+                    </li>
+                    <li>
+                      <a onClick={() => setUserState(null)}>Logout</a>
+                    </li>
+                  </>
+                  :
+                  <li>
+                    <Link to="/login">Login</Link>
+                  </li>
+              }
             </ul>
           </nav>
 
@@ -70,7 +82,7 @@ function App() {
             ></Route>
             <Route path="/services" element={<Services></Services>}></Route>
             <Route
-              path="/watchlist"
+              path="/cart"
               element={
                 <Watchlist
                   watchlist={watchlist}
@@ -79,7 +91,8 @@ function App() {
                 />
               }
             ></Route>
-            <Route path="/login" element={<Login />}></Route>
+            <Route path="/login" element={<LoginPage userstate={userState} setuserstate={setUserState} />}></Route>
+            <Route path="/profile" element={<ProfilePage userstate={userState} setuserstate={setUserState} />}></Route>
           </Routes>
         </Router>
       </div>

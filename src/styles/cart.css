@@ -1,0 +1,21 @@
+.cart-page {
+    background: linear-gradient( rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.589) ), url('/public/car1.jpg');
+    background-position:center top;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.btn2 {
+    background-color: #ffe176;
+    padding: 0 25px;
+    border-radius: 50px;
+    width: 300px;
+    justify-content: center;
+    float: right;
+    height: 50px;
+    margin-right: 50px;
+}

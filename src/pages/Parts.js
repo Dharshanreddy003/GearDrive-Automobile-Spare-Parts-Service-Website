@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../styles.css";
-import MovieCard from "./MovieCard";
-import Header from "./Header";
+import "../styles/parts.css";
+import MovieCard from "../components/CartItem";
+import Header from "../components/Header";
 
-export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
+export default function Parts({ movies, watchlist, toggleWatchlist }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [genre, setGenre] = useState("All Genres");
@@ -59,17 +59,17 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
   );
 
   return (
-    <div>
+    <div className="parts-page">
       <Header></Header>
-      <input
-        type="text"
-        className="search-input"
-        placeholder="Search spare parts..."
-        value={searchTerm}
-        onChange={handleSearchChange}
-      />
-
-      <div className="filter-bar">
+      <div className="filter">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search spare parts..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+        />
+      <div className="spacer"><span></span></div>
         <div className="filter-slot">
           <label>Brands</label>
           <select

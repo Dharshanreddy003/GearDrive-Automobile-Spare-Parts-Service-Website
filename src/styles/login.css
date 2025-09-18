@@ -1,0 +1,89 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login input {
+  width: 400px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+}
+
+input,
+button {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+  margin: 10px;
+  padding: 10px;
+  min-width: 300px;
+}
+
+button {
+  border-radius: 30px;
+  width: 400px;
+  height: 50px;
+  margin: 50px;
+  font-weight: bold;
+  transition: background-color 300ms linear;
+}
+
+button:hover {
+  background-color: rgb(30, 210, 255);
+  transition: background-color 300ms linear;
+}
+
+
+
+
+.login-page a {
+  color: rgb(30, 210, 255);
+  transition: background-color 300ms linear;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login-page a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: background-color 300ms linear;
+}
+
+.login-page h3 {
+  margin: 5px;
+  align-self: flex-start;
+}
+
+.division {
+  margin: 10px;
+  width: 100%;
+}

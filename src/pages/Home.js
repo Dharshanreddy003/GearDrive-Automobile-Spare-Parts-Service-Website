@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles.css";
-import Header from "./Header";
+import "../styles/home.css";
+import Header from "../components/Header";
 
 export default function HomePage() {
   return (
